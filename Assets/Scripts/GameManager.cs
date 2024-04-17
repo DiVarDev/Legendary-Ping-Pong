@@ -49,40 +49,40 @@ public class GameManager : MonoBehaviour
                     if (playerOneScore == maxScore)
                     {
                         Debug.Log("Player One has won!");
-                        SceneManager.LoadSceneAsync("VSPlayer Stage 2");
+                        SceneManager.LoadSceneAsync("VSPlayer Stage 2", LoadSceneMode.Single);
                     }
                     else if (playerTwoScore == maxScore)
                     {
                         Debug.Log("Player Two has won!");
-                        SceneManager.LoadSceneAsync("Victory Player Two");
+                        SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                     }
                     break;
                 case 2:
                     if (playerOneScore > playerTwoScore)
                     {
                         Debug.Log("Player One has won!");
-                        SceneManager.LoadSceneAsync("VSAI Stage 3");
+                        SceneManager.LoadSceneAsync("VSAI Stage 3", LoadSceneMode.Single);
                     }
                     else if (playerTwoScore > playerOneScore)
                     {
                         Debug.Log("Player Two has won!");
-                        SceneManager.LoadSceneAsync("Victory Player Two");
+                        SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                     }
                     break;
                 case 3:
                     if (playerOneScore > playerTwoScore)
                     {
                         Debug.Log("Player One has won!");
-                        SceneManager.LoadSceneAsync("Victory Player One");
+                        SceneManager.LoadSceneAsync("Victory Player One", LoadSceneMode.Single);
                     }
                     else if (playerTwoScore > playerOneScore)
                     {
                         Debug.Log("Player Two has won!");
-                        SceneManager.LoadSceneAsync("Victory Player Two");
+                        SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                     }
                     break;
                 default:
-                    SceneManager.LoadSceneAsync("MainMenu");
+                    SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Single);
                     break;
             }
         }

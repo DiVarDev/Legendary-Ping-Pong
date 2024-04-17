@@ -25,6 +25,6 @@ public class ContinueButton : MonoBehaviour
     // Functions
     private void TaskOnClick()
     {
-        SceneManager.LoadSceneAsync("MainMenu");
+        SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Single);
     }
 }

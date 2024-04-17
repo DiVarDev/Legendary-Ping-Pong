@@ -25,6 +25,6 @@ public class VSAIButton : MonoBehaviour
     // Functions
     private void TaskOnClick()
     {
-        SceneManager.LoadSceneAsync("VSAI Stage 3");
+        SceneManager.LoadSceneAsync("VSAI Stage 3", LoadSceneMode.Single);
     }
 }
