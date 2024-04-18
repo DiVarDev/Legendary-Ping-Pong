@@ -575,7 +575,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d108514c5fdb542438bdc3e4f931452b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 09772932dcc3d5d4fa597a7c148e973f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.15
   m_Pitch: 1
@@ -1256,7 +1256,10 @@ MonoBehaviour:
   playerTwoScore: 0
   gameStage: 1
   hasCountDown: 0
-  timeLeft: 0
+  maxTime: 15
+  currentTimeLeft: 0
+  textTimeLeft: {fileID: 0}
+  timeManager: {fileID: 0}
   ball: {fileID: 1939614775}
   playerOne: {fileID: 2096029947}
   playerTwo: {fileID: 62122964}
