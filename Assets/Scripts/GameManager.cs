@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
                 else if (playerTwoScore == maxScore)
                 {
                     Debug.Log("Player Two has won!");
-                    SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Single);
+                    SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                 }
                 break;
             case 2:
@@ -101,12 +101,12 @@ public class GameManager : MonoBehaviour
                 else if (playerTwoScore > playerOneScore && currentTimeLeft < 0.0f)
                 {
                     Debug.Log("Player Two has won!");
-                    SceneManager.LoadSceneAsync("VSPlayer Stage 1", LoadSceneMode.Single);
+                    SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                 }
                 else if (currentTimeLeft < 0.0f && playerOneScore == playerTwoScore)
                 {
                     Debug.Log("Player Two has won!");
-                    SceneManager.LoadSceneAsync("VSPlayer Stage 1", LoadSceneMode.Single);
+                    SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                 }
                 break;
             case 3:
@@ -118,12 +118,12 @@ public class GameManager : MonoBehaviour
                 else if (playerTwoScore > playerOneScore && currentTimeLeft < 0.0f)
                 {
                     Debug.Log("Player Two has won!");
-                    SceneManager.LoadSceneAsync("VSPlayer Stage 1", LoadSceneMode.Single);
+                    SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                 }
                 else if (currentTimeLeft < 0.0f && playerOneScore == playerTwoScore)
                 {
                     Debug.Log("Player Two has won!");
-                    SceneManager.LoadSceneAsync("VSPlayer Stage 1", LoadSceneMode.Single);
+                    SceneManager.LoadSceneAsync("Victory Player Two", LoadSceneMode.Single);
                 }
                 break;
             default:

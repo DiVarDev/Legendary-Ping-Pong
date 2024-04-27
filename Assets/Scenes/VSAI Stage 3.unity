@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d12a04319fa8f4fae1d2c936914d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 3
   multiplayer: 1.1
   minimumY: -3.5
   maximumY: 3.5
@@ -2083,7 +2083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 75
-  multiplier: 1.25
+  multiplier: 12.5
   ballrg: {fileID: 1939614778}
   startPosition: {x: 0, y: 0}
   audioSource: {fileID: 1939614781}

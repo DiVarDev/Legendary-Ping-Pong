@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  multiplier: 1
+  multiplier: 11
   ballrg: {fileID: 1939614778}
   startPosition: {x: 0, y: 0}
   audioSource: {fileID: 1939614781}

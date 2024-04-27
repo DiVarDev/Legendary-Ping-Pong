@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
     // Variables
     [Range(1f, 100f)]
     public float speed = 7f;
-    [Range(1f, 10f)]
+    [Range(1f, 100f)]
     public float multiplier = 10f;
     public Rigidbody2D ballrg;
     public Vector2 startPosition;
@@ -34,13 +34,13 @@ public class Ball : MonoBehaviour
         float x = Random.Range(0, 2) == 0 ? -1 : 1;
         float y = Random.Range(0, 2) == 0 ? -1 : 1;
 
-        ballrg.velocity = new Vector2(x * (speed * (multiplier * 10)) * Time.deltaTime, y * (speed * (multiplier * 10)) * Time.deltaTime);
+        ballrg.velocity = new Vector2(x * (speed * multiplier) * Time.deltaTime, y * (speed * multiplier) * Time.deltaTime);
     }
 
     public void Reset()
     {
+        ballrg.velocity = new Vector2(0.0f, 0.0f);
         transform.position = startPosition;
-        ballrg.velocity = Vector2.zero;
         LaunchBall();
     }
 

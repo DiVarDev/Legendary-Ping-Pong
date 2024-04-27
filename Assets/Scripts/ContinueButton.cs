@@ -8,6 +8,7 @@ public class ContinueButton : MonoBehaviour
 {
     // Variables
     private Button button;
+    [SerializeField] private string scene;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,14 @@ public class ContinueButton : MonoBehaviour
     // Functions
     private void TaskOnClick()
     {
-        SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Single);
+        if (scene != null)
+        {
+            SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single);
+        }
+        else
+        {
+            SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Single);
+
+        }
     }
 }
